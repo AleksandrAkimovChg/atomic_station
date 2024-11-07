@@ -24,7 +24,7 @@ public class NuclearStation {
             BigInteger energyDay = BigInteger.ZERO;
             try {
                 log.trace("День {}", i);
-                energyDay = energyDay.add(reactorDepartment.start());
+                energyDay = energyDay.add(reactorDepartment.run());
             } catch (NuclearFuelIsEmptyException e) {
                 log.warn("Внимание! Происходят работы на атомной станции! Электричества нет!");
                 log.debug(e.toString());

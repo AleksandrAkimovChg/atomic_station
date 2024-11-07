@@ -14,7 +14,7 @@ public class ReactorDepartment {
     private boolean isWork;
     private int countStart;
 
-    public BigInteger start() {
+    public BigInteger run() {
         if (isWork) {
             throw new ReactorWorkException("Реактор уже работает");
         }
